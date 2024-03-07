@@ -103,11 +103,7 @@ class RequestHandler(http.server.SimpleHTTPRequestHandler):
             record_id = self.path.split('/')[2]  #Assuming the record_id is in the URL path after /records/
             records = phr_system.view_records(record_id)
         elif self.path == '/':
-            auth_header = self.headers.get('Authorization')
-            auth_type, auth_string = auth_header.split(' ')
-            auth_string = base64.b64decode(auth_string).decode('utf-8')
-            username, password = auth_string.split(':')
-            records = phr_system.view_all_records(username)
+             records = phr_system.view_all_records()
         else:
             self.send_response(404)
             self.wfile.write(b'Not Found')
