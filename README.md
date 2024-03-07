@@ -132,7 +132,7 @@ This endpoint retrieves records by the record_id in the database
 
 ![Screenshot 2024-03-06 164249](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/fe64d259-daa0-4692-8618-a915747823bf)
 
-### POST /records
+### POST /records/:record_id
 
 This endpoint creates a new record in the database.
 
