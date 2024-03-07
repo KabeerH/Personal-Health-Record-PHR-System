@@ -182,6 +182,14 @@ This endpoint deletes a note from the database.
 
 ![image](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/cff7144d-2ca2-4e66-84f0-74adcbdbc222)
 
+## Security precautions made: 
+
+- User Authentication: Using Basic Authentication the system first verifies the identity of the user. When making any request to the system it checks the user’s credentials.
+
+- Password Hashing: Whenever a new user is added to the system, their data is hashed using the SHA-256 before storing the data into the SQlite database, if someone gets access to the users table then the data won’t show their password but instead hashed values.
+
+- Access Control: The records are associated with the user, the system will check which user is trying to access what data and only return the data associated with that user ensuring data security. 
+
 
 ## Contributors 
 
