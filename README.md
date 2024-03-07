@@ -150,7 +150,7 @@ This endpoint creates a new record in the database.
 ![Screenshot 2024-03-06 163724](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/f57c0b2e-772e-410c-9dbc-32d1798e49c6)
 
 
-### PUT /notes
+### PUT /records/record_id
 
 This endpoint updates an existing note in the database.
 
