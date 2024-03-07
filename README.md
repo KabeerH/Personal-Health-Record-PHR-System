@@ -11,7 +11,7 @@ For this project I decided to use a microservice architecture style approach the
 - Agility: Each microservice is small and can focus on a specific function allowing for easier management
 - Many aspects: In a microservice style each microservice is referred to a different aspect of the overall application: In a PHR system we can have one service responsible for the (user auth, user registration, etc (frontend)) and other for the creation, retrieving, updating and deleting records (CRUD).
 
-# Vision Statement
+## Vision Statement
 
 `FOR` individuals `WHO` need to view, add and send personal health records securely to healthcare providers, THE PHR system application is a tool to achieve these tasks `THAT` allow the user to make new records, view any record that is related to them or even send them to other people or providers, these features can be accessed by the user at anytime via APIS. `UNLIKE` traditional PHR systems, this system focuses on the needs of the users through personas and user stories. It uses a microservice approach to get the best results. `OUR` product lets the user manage their health information and records in a secure environment with the proper security measures to ensure that no sensitive information gets leaked to anyone beside them or the trusted people they send the data to.
 
@@ -24,7 +24,7 @@ FORMAT USED: (Moore’s vision template)
 - UNLIKE (primary competitive alternative)
 - OUR PRODUCT (statement of primary differentiation
 
-# Personas
+## Personas
 
 Persona one: Mike Cull, Freelancer (patient) 
 
@@ -49,24 +49,22 @@ Persona three: Billy Meek, professional football player (patient)
 - Currently needs: Since Billy needs to stay fit and healthy to play his football matches he needs to get regular tests done to see if any issues occur with his health, and get the appropriate treatment.
 - What the PHR system does for him: The PHR system allows Billy to view his records of his tests done for reference so if he has any concerns he can take up with his healthcare provider. 
 
-#Scenarios and user stories:
-
-For this part of the development implemented a Scrum using JIRA (agile methodologies)
+## Scenarios and user stories:
 
 - `Name`: Mike Cull
-- `Scenario`: While doing his monthly checkup, after getting the results he needs to send those records to his healthcare provider
-- `User Story`: As Mike a diabetic with low blood sugar, I want to share my test results with my healthcare provider so he can consult with me.
+- Scenario: While doing his monthly checkup, after getting the results he needs to send those records to his healthcare provider
+- User Story: As Mike a diabetic with low blood sugar, I want to share my test results with my healthcare provider so he can consult with me.
 
 
 - `Name`: Sam Buck
-- `Scenario`: On a normal day as a doctor, Sam needs to access records of different patients to make the correct assessments but doesn’t want to keep hardcopy of the records in his office 
-- `User Story`: As Sam a healthcare professional, I want to access patients records so I can make assessments with them
+- Scenario: On a normal day as a doctor, Sam needs to access records of different patients to make the correct assessments but doesn’t want to keep hardcopy of the records in his office 
+- User Story: As Sam a healthcare professional, I want to access patients records so I can make assessments with them
 
 - `Name`: Billy Meek
-- `Scenario`: Billy during a game feels dizzy and nauseous and faints. He doesn’t understand why, so goes to check his records on the PHR system to see what could have caused this.
-- `User Story`: As Billy a professional football player, I want to view my health records, so I know what caused me to faint during my game.
+- Scenario: Billy during a game feels dizzy and nauseous and faints. He doesn’t understand why, so goes to check his records on the PHR system to see what could have caused this.
+- User Story: As Billy a professional football player, I want to view my health records, so I know what caused me to faint during my game.
 
-#PHR System Documentation
+# PHR System Documentation
 
 ## Overview of Application
 
@@ -167,7 +165,7 @@ This endpoint updates an existing note in the database.
 4. In the text field, enter your note in the following format: record_id', 'full_name', 'dob', 'sex', 'allegries', ''medications', 'diagnosis', 'treatment', and 'notes'
 5. Click on `Send` to make the request.
 
-![image]()
+![image](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/a824b598-9ef4-48a3-b475-5851163222c5)
 
 ### DELETE /records/:record_id
 
@@ -182,7 +180,7 @@ This endpoint deletes a note from the database.
 3. change record_id with the id you trying to delete
 4. Click on `Send` to make the request
 
-![image]()
+![image](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/cff7144d-2ca2-4e66-84f0-74adcbdbc222)
 
 
 ## Contributors 
