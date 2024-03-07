@@ -104,6 +104,12 @@ Once the application is started, you can go to http://localhost:8000/ to access 
 
 ## METHODS Functions
 
+Before accessing the system you have to: 
+
+- `Register`: To start using the PHR system you must register for an account. To do this send a POST request to the /register endpoint or go to http://localhost:8000/register after starting the application. Register with a “username” and “password” field.
+  
+- `Log In`:  After you have registered for an account then you can login by sending a request to any endpoint after http://localhost:8000. In the Authorization header enter your “username” and “password” value. If the values are not correct then you will be returned with an “Unauthorized” response. 
+
 ### GET (ALL) /
 
 This endpoint retrieves all notes from the database.
