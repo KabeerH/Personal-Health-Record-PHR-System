@@ -150,7 +150,7 @@ This endpoint creates a new record in the database.
 ![Screenshot 2024-03-06 163724](https://github.com/KabeerH/Personal-Health-Record-PHR-System/assets/122492914/f57c0b2e-772e-410c-9dbc-32d1798e49c6)
 
 
-### PUT /records/record_id
+### PUT /records/:record_id
 
 This endpoint updates an existing note in the database.
 
@@ -160,7 +160,7 @@ This endpoint updates an existing note in the database.
 
 **Usage with Postman:**
 1. Set the HTTP method to `PUT`.
-2. Enter the request URL as `http://localhost:8000/records`.
+2. Enter the request URL as `http://localhost:8000/records/:record_id`.
 3. Click on `Body`, then select `raw` and `JSON`.
 4. In the text field, enter your note in the following format: record_id', 'full_name', 'dob', 'sex', 'allegries', ''medications', 'diagnosis', 'treatment', and 'notes'
 5. Click on `Send` to make the request.
@@ -176,7 +176,7 @@ This endpoint deletes a note from the database.
 
 **Usage with Postman:**
 1. Set the HTTP method to `DELETE`.
-2. Enter the request URL as `http://localhost:8000/records/record_id`.
+2. Enter the request URL as `http://localhost:8000/records/:record_id`.
 3. change record_id with the id you trying to delete
 4. Click on `Send` to make the request
 
